@@ -1,0 +1,20 @@
+[project]
+name = "clausewise-corpus"
+version = "0.1.0"
+description = "ClauseWise legal corpus: versioned rule cards, loader, and lookup."
+requires-python = ">=3.12"
+dependencies = [
+    "clausewise-core",
+    "pydantic>=2.7",
+    "pyyaml>=6",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+clausewise-core = { workspace = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/clausewise_corpus"]

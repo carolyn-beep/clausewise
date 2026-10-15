@@ -1,0 +1,28 @@
+id: federal.owbpa.626f
+jurisdiction: federal
+topic: release_timing
+citation: "29 U.S.C. §626(f) (Older Workers Benefit Protection Act)"
+source_url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section626&num=0&edition=prelim"
+source_sha256: null
+effective_from: "1990-10-16"
+effective_to: null
+last_verified: "2026-10-15"
+verified_by: "self-review (from plan research; primary-source fetch pending)"
+confidence: high
+statute_chunks: []
+plain_summary: |
+  The Older Workers Benefit Protection Act (OWBPA), part of the federal Age Discrimination in
+  Employment Act, sets conditions for a "knowing and voluntary" waiver of age-discrimination
+  claims in a severance or separation agreement. The agreement must advise the worker in
+  writing to consult counsel, give at least 21 days to consider it (at least 45 days when the
+  waiver is offered as part of an exit program for a group of workers), and allow at least
+  7 days after signing to revoke. Group programs must also disclose the job titles and ages of
+  the individuals selected and not selected for the program. A waiver that skips these steps
+  may not validly release federal age-discrimination claims.
+thresholds:
+  consider_days: 21
+  consider_days_group: 45
+  revoke_days: 7
+pending_changes: []
+related_rules: []
+related_cases: []

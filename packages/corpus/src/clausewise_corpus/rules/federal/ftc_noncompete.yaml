@@ -1,0 +1,23 @@
+id: federal.ftc_noncompete.status
+jurisdiction: federal
+topic: noncompete
+citation: "FTC Non-Compete Rule, 16 C.F.R. Part 910 (removed)"
+source_url: "https://www.ftc.gov/legal-library/browse/rules/noncompete-rule"
+source_sha256: null
+effective_from: "2026-02-12"
+effective_to: null
+last_verified: "2026-10-15"
+verified_by: "self-review (from plan research; primary-source fetch pending)"
+confidence: medium
+statute_chunks: []
+plain_summary: |
+  The FTC's 2024 nationwide ban on most non-competes is NOT in effect. The FTC voted to stop
+  defending the rule, and the rule was removed from the Code of Federal Regulations by a
+  Federal Register notice dated February 12, 2026. Non-competes are therefore governed by
+  state law, with case-by-case federal enforcement still possible under Section 5 of the FTC
+  Act. This card records the federal status only; whether a specific non-compete is
+  enforceable against you depends on your state (see the state rule cards).
+thresholds: {}
+pending_changes: []
+related_rules: []
+related_cases: []

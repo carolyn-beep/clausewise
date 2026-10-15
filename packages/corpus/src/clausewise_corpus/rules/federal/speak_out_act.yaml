@@ -1,0 +1,22 @@
+id: federal.speak_out.9usc401
+jurisdiction: federal
+topic: confidentiality_whistleblower
+citation: "Speak Out Act, 9 U.S.C. §§401-402"
+source_url: "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title9-section401&num=0&edition=prelim"
+source_sha256: null
+effective_from: "2022-12-07"
+effective_to: null
+last_verified: "2026-10-15"
+verified_by: "self-review (from plan research; primary-source fetch pending)"
+confidence: high
+statute_chunks: []
+plain_summary: |
+  The federal Speak Out Act makes a pre-dispute nondisclosure or non-disparagement clause
+  unenforceable when it concerns a dispute involving sexual assault or sexual harassment.
+  "Pre-dispute" means the clause was agreed to before any such dispute arose, which is the
+  usual case for a clause buried in an offer letter or an onboarding NDA. It does not stop a
+  worker from choosing confidentiality as part of settling a claim that has already arisen.
+thresholds: {}
+pending_changes: []
+related_rules: []
+related_cases: []

@@ -1,0 +1,16 @@
+[project]
+name = "clausewise-ft"
+version = "0.1.0"
+description = "ClauseWise fine-tuning benchmark: QLoRA clause classifier vs. Claude."
+requires-python = ">=3.12"
+dependencies = ["clausewise-core"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+clausewise-core = { workspace = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/clausewise_ft"]

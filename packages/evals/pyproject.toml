@@ -1,0 +1,20 @@
+[project]
+name = "clausewise-evals"
+version = "0.1.0"
+description = "ClauseWise evals: legal-fact suite, retrieval metrics, golden sets, red-team."
+requires-python = ">=3.12"
+dependencies = [
+    "clausewise-core",
+    "clausewise-corpus",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+clausewise-core = { workspace = true }
+clausewise-corpus = { workspace = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/clausewise_evals"]
