@@ -77,6 +77,18 @@ class RuleCard(BaseModel):
         return True
 
 
+class Clause(BaseModel):
+    """One segmented clause of a contract, with its character span in the source text."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    id: str
+    heading: str | None
+    text: str
+    start: int
+    end: int
+
+
 class Facts(BaseModel):
     """Facts extracted from the contract or supplied via MCP elicitation (PLAN.md §5.2)."""
 
