@@ -1,0 +1,24 @@
+id: ca.choice_of_law.16600_5
+jurisdiction: CA
+topic: choice_of_law
+citation: "Cal. Bus. & Prof. Code §16600.5"
+source_url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=16600.5"
+source_sha256: null
+effective_from: "2024-01-01"
+effective_to: null
+last_verified: "2026-10-15"
+verified_by: "self-review (from plan research; primary-source fetch pending)"
+confidence: medium
+statute_chunks: []
+plain_summary: >
+  A non-compete that is void under California law cannot be enforced against a California
+  resident or employee, regardless of where or when the contract was signed, and even if the
+  person worked outside California at the time. The law also creates a private right of
+  action, so a worker can sue an employer that tries to enforce — or even includes — such a
+  clause. The exact wording of subsection (a) is pending primary-source verification.
+thresholds: {}
+pending_changes: []
+related_rules:
+  - ca.noncompete.16600
+  - ca.choice_of_law.925
+related_cases: []

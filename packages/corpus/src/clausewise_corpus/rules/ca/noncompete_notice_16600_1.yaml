@@ -1,0 +1,24 @@
+id: ca.noncompete.16600_1
+jurisdiction: CA
+topic: noncompete
+citation: "Cal. Bus. & Prof. Code §16600.1"
+source_url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=16600.1"
+source_sha256: null
+effective_from: "2024-01-01"
+effective_to: null
+last_verified: "2026-10-15"
+verified_by: "self-review (from plan research; primary-source fetch pending)"
+confidence: medium
+statute_chunks: []
+plain_summary: >
+  California employers must notify current employees — and certain former employees — in
+  writing that any non-compete clause they signed is void. Employers were required to send
+  that individualized notice by February 14, 2024. This is a separate notice obligation: it
+  does not make a void non-compete enforceable, but a failure to notify can itself be a
+  violation.
+thresholds:
+  notice_deadline: "2024-02-14"
+pending_changes: []
+related_rules:
+  - ca.noncompete.16600
+related_cases: []

@@ -1,0 +1,24 @@
+id: ca.choice_of_law.925
+jurisdiction: CA
+topic: choice_of_law
+citation: "Cal. Lab. Code §925"
+source_url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=925."
+source_sha256: null
+effective_from: "2017-01-01"
+effective_to: null
+last_verified: "2026-10-15"
+verified_by: "self-review (from plan research; primary-source fetch pending)"
+confidence: high
+statute_chunks: []
+plain_summary: >
+  For someone who primarily works and lives in California, an employer generally cannot use a
+  contract to force disputes into another state's courts, or to apply another state's law to
+  claims arising in California. The main exception is when the employee was individually
+  represented by their own lawyer in negotiating the agreement. A worker can void an offending
+  provision, keep the dispute in California under California law, and may recover attorney's
+  fees.
+thresholds: {}
+pending_changes: []
+related_rules:
+  - ca.choice_of_law.16600_5
+related_cases: []

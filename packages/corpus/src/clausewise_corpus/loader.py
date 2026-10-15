@@ -18,7 +18,7 @@ import yaml
 from clausewise_core.schemas import RuleCard
 
 # Bumped by a human when a corpus PR is merged (PLAN.md §7.2, format YYYY.MM.N).
-CORPUS_VERSION = "2026.10.0"
+CORPUS_VERSION = "2026.10.1"
 
 
 def _iter_yaml(node: Traversable) -> list[Traversable]:

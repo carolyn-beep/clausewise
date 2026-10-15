@@ -1,0 +1,25 @@
+id: ca.misclassification.2775
+jurisdiction: CA
+topic: misclassification
+citation: "Cal. Lab. Code §2775 (AB 5 / AB 2257)"
+source_url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2775."
+source_sha256: null
+effective_from: "2020-01-01"
+effective_to: null
+last_verified: "2026-10-15"
+verified_by: "self-review (from plan research; primary-source fetch pending)"
+confidence: high
+statute_chunks: []
+plain_summary: >
+  California presumes a worker is an employee, not an independent contractor, unless the hiring
+  entity proves all three parts of the "ABC" test: (A) the worker is free from the hiring
+  entity's control and direction in fact and under the contract; (B) the work is outside the
+  usual course of the hiring entity's business; and (C) the worker is customarily engaged in an
+  independently established trade, occupation, or business of the same kind. A number of
+  occupations have statutory exceptions. Being misclassified as a contractor can mean losing
+  minimum-wage, overtime, and other employee protections.
+thresholds:
+  abc_prongs: 3
+pending_changes: []
+related_rules: []
+related_cases: []

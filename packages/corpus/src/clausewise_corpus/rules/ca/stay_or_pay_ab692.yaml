@@ -1,0 +1,24 @@
+id: ca.stay_or_pay.ab692
+jurisdiction: CA
+topic: stay_or_pay
+citation: "Cal. Bus. & Prof. Code §16608; Cal. Lab. Code §926 (AB 692)"
+source_url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=16608."
+source_sha256: null
+effective_from: "2026-01-01"
+effective_to: null
+last_verified: "2026-10-15"
+verified_by: "self-review (from plan research; primary-source fetch pending)"
+confidence: medium
+statute_chunks: []
+plain_summary: >
+  California bans most "stay-or-pay" clauses — terms that require a worker to repay the
+  employer (for training, a signing bonus, relocation costs, and the like) if they leave
+  before a set date — in contracts entered into on or after January 1, 2026. Workers have a
+  private right of action, with statutory damages starting at $5,000. Narrow exceptions exist,
+  such as certain genuine tuition-repayment arrangements for transferable credentials.
+thresholds:
+  applies_to_contracts_on_or_after: "2026-01-01"
+  private_right_floor_usd: 5000
+pending_changes: []
+related_rules: []
+related_cases: []

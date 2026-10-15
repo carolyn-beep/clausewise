@@ -1,0 +1,23 @@
+id: ca.invention_assignment.2870
+jurisdiction: CA
+topic: invention_assignment
+citation: "Cal. Lab. Code §§2870-2872"
+source_url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2870."
+source_sha256: null
+effective_from: "1979-01-01"
+effective_to: null
+last_verified: "2026-10-15"
+verified_by: "self-review (from plan research; primary-source fetch pending)"
+confidence: medium
+statute_chunks: []
+plain_summary: >
+  A California invention-assignment agreement cannot require a worker to assign inventions they
+  developed entirely on their own time without using the employer's equipment, supplies,
+  facilities, or trade-secret information — unless the invention either relates to the
+  employer's business or actual or anticipated research and development, or results from work
+  the worker performed for the employer. Employers must give written notice of these limits,
+  and a clause that tries to assign more is unenforceable to that extent.
+thresholds: {}
+pending_changes: []
+related_rules: []
+related_cases: []

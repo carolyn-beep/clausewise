@@ -1,0 +1,25 @@
+id: ca.final_pay.201
+jurisdiction: CA
+topic: final_pay
+citation: "Cal. Lab. Code §§201-203"
+source_url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=201."
+source_sha256: null
+effective_from: "1937-01-01"
+effective_to: null
+last_verified: "2026-10-15"
+verified_by: "self-review (from plan research; primary-source fetch pending)"
+confidence: medium
+statute_chunks: []
+plain_summary: >
+  When a California employer discharges a worker, all earned and unpaid wages are generally due
+  immediately at the time of termination. A worker who quits without notice is generally owed
+  final wages within 72 hours; a worker who gives at least 72 hours' notice is owed them on
+  their last day. If the employer willfully fails to pay on time, a "waiting time" penalty
+  accrues at the worker's daily wage rate for each day the pay is late, up to a maximum of 30
+  days.
+thresholds:
+  quit_without_notice_hours: 72
+  waiting_time_penalty_max_days: 30
+pending_changes: []
+related_rules: []
+related_cases: []

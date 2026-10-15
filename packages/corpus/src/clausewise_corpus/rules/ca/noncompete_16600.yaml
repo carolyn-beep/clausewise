@@ -1,0 +1,25 @@
+id: ca.noncompete.16600
+jurisdiction: CA
+topic: noncompete
+citation: "Cal. Bus. & Prof. Code §16600"
+source_url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=16600."
+source_sha256: null
+effective_from: "1941-01-01"
+effective_to: null
+last_verified: "2026-10-15"
+verified_by: "self-review (from plan research; primary-source fetch pending)"
+confidence: high
+statute_chunks: []
+plain_summary: >
+  In California, a contract that restrains someone from engaging in a lawful profession,
+  trade, or business is void. In practice this means most non-compete clauses in employment
+  agreements cannot be enforced against employees, with only narrow statutory exceptions (such
+  as a true sale of a business). California has taken this position since the 1872 Civil Code;
+  it is now codified at Business & Professions Code §16600 and was strengthened by SB 699,
+  effective January 1, 2024.
+thresholds: {}
+pending_changes: []
+related_rules:
+  - ca.noncompete.16600_1
+  - ca.choice_of_law.16600_5
+related_cases: []
