@@ -110,3 +110,80 @@ def lookup_rule_all():
     from clausewise_corpus.loader import load_rules
 
     return load_rules()
+
+
+# --- Additional grounded CA facts ----------------------------------------------------------
+
+
+def test_ca_16600_has_narrow_exceptions():
+    card = _one("CA", "noncompete", "ca.noncompete.16600")
+    assert "narrow statutory exceptions" in card.plain_summary
+
+
+def test_ca_16600_strengthened_by_sb699_in_2024():
+    summary = _one("CA", "noncompete", "ca.noncompete.16600").plain_summary
+    assert "SB 699" in summary
+    assert "January 1, 2024" in summary
+
+
+def test_ca_void_notice_covers_former_employees():
+    assert "former employees" in _one("CA", "noncompete", "ca.noncompete.16600_1").plain_summary
+
+
+def test_ca_16600_5_creates_private_right_of_action():
+    assert "private right of action" in _one(
+        "CA", "choice_of_law", "ca.choice_of_law.16600_5"
+    ).plain_summary
+
+
+def test_ca_16600_5_covers_contracts_signed_out_of_state():
+    assert "worked outside California" in _one(
+        "CA", "choice_of_law", "ca.choice_of_law.16600_5"
+    ).plain_summary
+
+
+def test_ca_925_allows_recovery_of_attorney_fees():
+    assert "attorney's fees" in _one("CA", "choice_of_law", "ca.choice_of_law.925").plain_summary
+
+
+def test_ca_ab692_has_tuition_exception():
+    card = _one("CA", "stay_or_pay", "ca.stay_or_pay.ab692", as_of=date(2026, 6, 1))
+    assert "tuition" in card.plain_summary
+
+
+def test_ca_ab692_creates_private_right_of_action():
+    card = _one("CA", "stay_or_pay", "ca.stay_or_pay.ab692", as_of=date(2026, 6, 1))
+    assert "private right of action" in card.plain_summary
+
+
+def test_ca_2870_carveout_relates_to_business_or_results_from_work():
+    summary = _one("CA", "invention_assignment", "ca.invention_assignment.2870").plain_summary
+    assert "relates to the employer's business" in summary
+    assert "results from work" in summary
+
+
+def test_ca_2870_requires_written_notice():
+    assert "written notice" in _one(
+        "CA", "invention_assignment", "ca.invention_assignment.2870"
+    ).plain_summary
+
+
+def test_ca_final_pay_due_immediately_on_discharge():
+    summary = _one("CA", "final_pay", "ca.final_pay.201").plain_summary
+    assert "immediately at the time of termination" in summary
+
+
+def test_ca_misclassification_citation_mentions_ab5():
+    assert "AB 5" in _one("CA", "misclassification", "ca.misclassification.2775").citation
+
+
+def test_ca_misclassification_presumes_employee_status():
+    summary = _one("CA", "misclassification", "ca.misclassification.2775").plain_summary
+    assert "presumes a worker is an employee" in summary
+
+
+def test_every_ca_card_has_a_substantive_plain_summary():
+    for card in [c for c in lookup_rule_all() if c.jurisdiction == "CA"]:
+        assert len(card.plain_summary.strip()) > 80
+        assert card.confidence in {"high", "medium"}
+

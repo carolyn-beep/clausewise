@@ -41,3 +41,32 @@ def test_speak_out_act_is_present_and_dated():
     cards = lookup_rule("federal", "confidentiality_whistleblower")
     assert cards, "Speak Out Act card not found"
     assert cards[0].effective_from.isoformat() == "2022-12-07"
+
+
+def test_owbpa_requires_written_advice_to_consult_counsel():
+    assert "advise the worker in writing to consult counsel" in _owbpa().plain_summary
+
+
+def test_owbpa_group_programs_disclose_titles_and_ages():
+    assert "job titles and ages" in _owbpa().plain_summary
+
+
+def test_ftc_enforcement_still_possible_under_section_5():
+    card = lookup_rule("federal", "noncompete")[0]
+    assert "Section 5" in card.plain_summary
+
+
+def test_ftc_status_dated_to_cfr_removal():
+    card = lookup_rule("federal", "noncompete")[0]
+    assert card.effective_from.isoformat() == "2026-02-12"
+
+
+def test_speak_out_covers_assault_and_harassment():
+    summary = lookup_rule("federal", "confidentiality_whistleblower")[0].plain_summary.lower()
+    assert "sexual assault" in summary
+    assert "sexual harassment" in summary
+
+
+def test_speak_out_applies_to_pre_dispute_clauses():
+    summary = lookup_rule("federal", "confidentiality_whistleblower")[0].plain_summary.lower()
+    assert "pre-dispute" in summary

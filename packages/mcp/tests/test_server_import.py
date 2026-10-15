@@ -3,10 +3,12 @@
 import asyncio
 import inspect
 
+from clausewise_core import DISCLAIMER
 from clausewise_mcp.server import (
     build_deadlines_payload,
     build_explain_payload,
     build_lookup_payload,
+    build_review_prompt,
     main,
     mcp,
 )
@@ -63,3 +65,31 @@ def test_deadlines_payload_surfaces_owbpa_windows():
     rules = {rule["id"]: rule for rule in payload["deadline_rules"]}
     assert "federal.owbpa.626f" in rules
     assert rules["federal.owbpa.626f"]["thresholds"]["consider_days"] == 21
+
+
+def test_prompts_are_registered():
+    result = mcp.list_prompts()
+    prompts = asyncio.run(result) if inspect.isawaitable(result) else result
+    names = {getattr(p, "name", None) for p in prompts}
+    assert {
+        "review_severance",
+        "review_offer",
+        "review_nda",
+        "review_contractor_agreement",
+    } <= names
+
+
+def test_review_prompt_is_safe_and_grounded():
+    text = build_review_prompt(
+        "severance", contract_text="You have 14 days to sign.", work_state="CA"
+    )
+    assert "<untrusted_document>" in text and "</untrusted_document>" in text
+    assert "You have 14 days to sign." in text
+    assert "not legal advice" in text
+    assert "never tell the worker whether to sign" in text
+    assert DISCLAIMER in text
+
+
+def test_review_prompt_unknown_state_prompts_to_ask():
+    text = build_review_prompt("offer")
+    assert "unknown" in text.lower()

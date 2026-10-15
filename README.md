@@ -73,9 +73,25 @@ server when prompted, then ask it to call `lookup_rule`.
 
 ## Status
 
-**Phase 0 (foundations).** Workspace, CI, schemas, a "hello" `lookup_rule` tool backed by
-three verified federal rule cards (OWBPA, FTC non-compete status, Speak Out Act), and the
-first legal-fact tests. Phase 1 (California corpus + RAG) is next; see `docs/PLAN.md` §15.
+**Phase 1 in progress (California corpus + RAG).** Built so far:
+
+- **Corpus:** 3 federal + 8 California rule cards (summary-level; verbatim statute text and
+  exact effective dates are tracked for primary-source verification).
+- **MCP tools (read-only):** `lookup_rule`, `explain_clause`, `check_deadlines`, plus guided
+  prompts (`review_severance`/`review_offer`/`review_nda`/`review_contractor_agreement`) and
+  the `clausewise://corpus/manifest` resource.
+- **Analysis primitives:** clause segmentation, contract-type detection, a reversible
+  redaction pre-pass, deterministic citation verification, and BM25 retrieval.
+- **Evals:** 53 legal-fact assertions; a retrieval eval harness (BM25 recall@5 **0.973** on
+  37 worker questions).
+
+Still ahead in Phase 1 (needs API keys): dense/hybrid retrieval + rerank, the single-pass
+Claude analysis (`analyze_contract` → `FlagReport`), and the golden-contract flag evals. See
+`docs/PLAN.md` §15.
+
+```bash
+uv run clausewise-retrieval-eval   # print the retrieval metrics table
+```
 
 ## Licenses
 
